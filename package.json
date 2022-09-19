@@ -17,6 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "author": "Waris Haleem\"",
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -24,7 +24,7 @@
 #### 1 - Git Clone.
 
 ```
-git clone https://github.com/iAmWaris97/Delicious-Meals.git
+git clone https://github.com/iAmWaris97/math-magician.git
 ```
 #### 2 - Install node packages.
 

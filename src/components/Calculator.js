@@ -1,4 +1,5 @@
 import React from 'react';
+import './calculator.css';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -11,95 +12,95 @@ class Calculator extends React.Component {
       <div className="container">
         <div className="calculator">
           <div className="display">
-            <span> </span>
+            <span> 0 </span>
           </div>
           <div className="keypad">
             <div className="input-keys">
               <div className="functions">
-                <button type="button" className="clear-key">
+                <button type="button" className="key clear-key">
                   AC
                 </button>
-                <button type="button" className="change-sign">
+                <button type="button" className="key change-sign">
                   +/-
                 </button>
-                <button type="button" className="percentage">
+                <button type="button" className="key percentage">
                   %
                 </button>
               </div>
               <div className="numbers">
                 <button
                   type="button"
-                  className="zero"
+                  className="key zero"
                   value={0}
                 >
                   0
                 </button>
                 <button
                   type="button"
-                  className="dot"
+                  className="key dot"
                   value="."
                 >
                   .
                 </button>
                 <button
                   type="button"
-                  className="one"
+                  className="key one"
                   value={1}
                 >
                   1
                 </button>
                 <button
                   type="button"
-                  className="two"
+                  className="key two"
                   value={2}
                 >
                   2
                 </button>
                 <button
                   type="button"
-                  className="three"
+                  className="key three"
                   value={3}
                 >
                   3
                 </button>
                 <button
                   type="button"
-                  className="four"
+                  className="key four"
                   value={4}
                 >
                   4
                 </button>
                 <button
                   type="button"
-                  className="five"
+                  className="key five"
                   value={5}
                 >
                   5
                 </button>
                 <button
                   type="button"
-                  className="six"
+                  className="key six"
                   value={6}
                 >
                   6
                 </button>
                 <button
                   type="button"
-                  className="seven"
+                  className="key seven"
                   value={7}
                 >
                   7
                 </button>
                 <button
                   type="button"
-                  className="eight"
+                  className="key eight"
                   value={8}
                 >
                   8
                 </button>
                 <button
                   type="button"
-                  className="nine"
+                  className="key nine"
                   value={9}
                 >
                   9
@@ -109,29 +110,29 @@ class Calculator extends React.Component {
             <div className="operators">
               <button
                 type="button"
-                className="devision"
+                className="key devision"
               >
                 /
               </button>
               <button
                 type="button"
-                className="multiplication"
+                className="key multiplication"
               >
                 *
               </button>
               <button
                 type="button"
-                className="subtraction"
+                className="key subtraction"
               >
                 -
               </button>
               <button
                 type="button"
-                className="addition"
+                className="key addition"
               >
                 +
               </button>
-              <button type="button" className="equals">
+              <button type="button" className="key equals">
                 =
               </button>
             </div>

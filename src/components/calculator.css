@@ -47,9 +47,12 @@ button:active {
   align-items: center;
   color: white;
   background: #706d6d;
-  font-size: 4em;
+  font-size: 3vw;
   flex: 1;
   padding-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .keypad {
@@ -91,8 +94,7 @@ button:active {
 
 .numbers .zero {
   width: 160px;
-  text-align: left;
-  padding-left: 32px;
+  text-align: center;
 }
 
 .numbers .dot {

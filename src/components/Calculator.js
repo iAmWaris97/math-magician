@@ -8,39 +8,67 @@ const Calculator = () => {
   const [operation, setOperation] = useState(null);
   const [err, setErr] = useState(null);
   const handleClick = (e) => {
-    const result = calculate({
-      total, next, operation, err,
-    }, e.target.value);
+    const result = calculate(
+      {
+        total,
+        next,
+        operation,
+        err,
+      },
+      e.target.value,
+    );
     setTotal(() => result.total);
     setNext(() => result.next);
     setOperation(() => result.operation);
     setErr(() => result.err);
   };
+
   return (
     <div className="container">
       <div className="calculator">
         <div className="display">
           <span>
-            {' '}
             {next || operation || total || err || 0}
-            {' '}
           </span>
         </div>
         <div className="keypad">
           <div className="input-keys">
             <div className="functions">
-              <button type="button" onClick={handleClick} className="key clear-key" value="AC">
+              <button
+                type="button"
+                onClick={handleClick}
+                className="key clear-key"
+                value="AC"
+              >
                 AC
               </button>
-              <button type="button" onClick={handleClick} className="key change-sign" value="+/-">
+              <button
+                type="button"
+                onClick={handleClick}
+                className="key change-sign"
+                value="+/-"
+              >
                 +/-
               </button>
-              <button type="button" onClick={handleClick} className="key percentage" value="%">
+              <button
+                type="button"
+                onClick={handleClick}
+                className="key percentage"
+                value="%"
+              >
                 %
               </button>
             </div>
             <div className="numbers">
-              <button type="button" onClick={handleClick} className="key zero" value={0}> 0</button>
+              <button
+                type="button"
+                onClick={handleClick}
+                className="key zero"
+                value={0}
+              >
+                {' '}
+                0
+              </button>
               <button
                 type="button"
                 onClick={handleClick}
@@ -124,11 +152,51 @@ const Calculator = () => {
             </div>
           </div>
           <div className="operators">
-            <button type="button" onClick={handleClick} className="key devide " value="÷">/ </button>
-            <button type="button" onClick={handleClick} className="key multiply " value="x">* </button>
-            <button type="button" onClick={handleClick} className="key subtract " value="-">-</button>
-            <button type="button" onClick={handleClick} className="key add" value="+">+ </button>
-            <button type="button" onClick={handleClick} className="key equals" value="="> = </button>
+            <button
+              type="button"
+              onClick={handleClick}
+              className="key devide "
+              value="÷"
+            >
+              /
+              {' '}
+            </button>
+            <button
+              type="button"
+              onClick={handleClick}
+              className="key multiply "
+              value="x"
+            >
+              *
+              {' '}
+            </button>
+            <button
+              type="button"
+              onClick={handleClick}
+              className="key subtract "
+              value="-"
+            >
+              -
+            </button>
+            <button
+              type="button"
+              onClick={handleClick}
+              className="key add"
+              value="+"
+            >
+              +
+              {' '}
+            </button>
+            <button
+              type="button"
+              onClick={handleClick}
+              className="key equals"
+              value="="
+            >
+              {' '}
+              =
+              {' '}
+            </button>
           </div>
         </div>
       </div>

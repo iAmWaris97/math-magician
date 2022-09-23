@@ -4,7 +4,8 @@
 
 > This is the first React app as part of the Microverse program.
 > This App contains three pages (Home, Calculator and Quote).
-> It will developed in multiple stages, and currently it is in its initial setup stage of development.
+> It will developed in multiple stages, and currently it is in the stage where you only have the Calculator and its operations are working.
+> I need to develop the other two pages and make them route using the react router.
 
 ## Built With
 

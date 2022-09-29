@@ -1,3 +1,5 @@
+import './Styles.css';
+
 const Header = () => (
   <header>
     <nav>

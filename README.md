@@ -7,6 +7,8 @@
 > It will developed in multiple stages, and currently it is in the stage where you only have the Calculator and its operations are working.
 > I need to develop the other two pages and make them route using the react router.
 
+![Project Screenshot](./snapshot.PNG "Math Magician")
+
 ## Built With
 
 - **HTML**
